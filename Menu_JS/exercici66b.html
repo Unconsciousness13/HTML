@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="../estils.css" />
+<title>Exercici 66 bis</title>
+<style>
+  .ocult {
+      display:none;
+  }
+</style>
+<script>
+  function ocultarTot()
+  {
+      var ids = ['animals', 'vegetals', 'minerals'];
+
+      for (var i=0; i<ids.length; i++)
+      {
+          var id = ids[i];
+          document.getElementById(id).className = "ocult";
+      }
+  }
+
+  function mostrar(id)
+  {
+      var element = document.getElementById(id);
+      var classe = element.className;
+
+      ocultarTot();
+
+      if (classe == "ocult")
+      {
+          element.className = "";
+      }
+      else
+      {
+          element.className = "ocult";
+      }
+  }
+</script>
+</head>
+<body>
+<h1>Exercici 66 bis</h1>
+<p>Mostrar una subllista i ocultar la resta</p>
+<!--
+    Quan s'escriu l'event "onclick" d'un enllaç
+    ha de retornar "false" si volem que
+    ignori el vincle "href"
+-->
+<ol>
+    <li><a href="#" onclick="mostrar('animals'); return false;">Animals</a>
+        <ul id="animals" class="ocult">
+            <li>Vaca</li>
+            <li>Oca</li>
+            <li>Cabra</li>
+        </ul>
+    </li>
+    <li><a href="#" onclick="mostrar('vegetals'); return false;">Vegetals</a>
+        <ul id="vegetals" class="ocult">
+            <li>Enciam</li>
+            <li>Albergínia</li>
+            <li>Tomàquet</li>
+        </ul>
+    </li>
+    <li><a href="#" onclick="mostrar('minerals'); return false;">Minerals</a>
+        <ul id="minerals" class="ocult">
+            <li>Quars</li>
+            <li>Feldespeta</li>
+            <li>Mica</li>
+        </ul>
+    </li>
+</ol>
+
+</body>
+</html>

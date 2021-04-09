@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="../estils.css" />
+<title>Exercici 64</title>
+<script>
+  function iniciar()
+  {
+      for (var i=1; i<=3; i++)
+      {
+          document.getElementById('demo' + i).style.display = "none";
+      }
+  }
+  function mostrar(id)
+  {
+      var elemento = document.getElementById(id);
+
+      if (elemento.style.display == "") // Si està visible
+      {
+          elemento.style.display = "none"; // l'ocult
+      }
+      else // i sinó
+      {
+          elemento.style.display = ""; // el mostro
+      }
+  }
+</script>
+</head>
+<body onload="iniciar()">
+<h1>Exercici 64</h1>
+<p>Mostrar i ocultar elements de la pàgina web</p>
+
+<a href="#" onclick="mostrar('demo1'); return false;">Veure 1</a>
+<p id="demo1">Primer párrafo</p>
+
+<a href="#" onclick="mostrar('demo2'); return false;">Veure 2</a>
+<p id="demo2">Segundo párrafo</p>
+
+<a href="#" onclick="mostrar('demo3'); return false;">Veure 3</a>
+<p id="demo3">Tercer párrafo</p>
+
+</body>
+</html>

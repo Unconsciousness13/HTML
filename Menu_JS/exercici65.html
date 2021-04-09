@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../estils.css" />
+		<title>Exercici 65</title>
+		<style>
+		  .ocult {
+			  display:none;
+		  }
+		</style>
+		<script>
+		  function mostrar(id)
+		  {
+			  var element = document.getElementById(id);
+
+			  if (element.className == "ocult")
+			  {
+				  element.className = "";
+			  }
+			  else
+			  {
+				  element.className = "ocult";
+			  }
+			  return false;
+		  }
+		</script>
+	</head>
+	<body>
+		<h1>Exercici 65</h1>
+		<p>Mostrar i ocultar elements de la pàgina web amb CSS i JavaScript</p>
+
+		<p><a href="#" onclick="mostrar('demo1');">Veure 1</a></p>
+		<p id="demo1" class="ocult">Primer paràgraf</p>
+
+		<p><a href="#" onclick="mostrar('demo2');">Veure 2</a></p>
+		<p id="demo2" >Segon paràgraf</p>
+
+		<p><a href="http://www.google.es" onclick="mostrar('demo3'); return false;">Veure 3</a></p>
+		<p id="demo3" class="ocult">Tercer paràgraf</p>
+	</body>
+</html>

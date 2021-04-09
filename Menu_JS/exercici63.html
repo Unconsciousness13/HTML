@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" type="text/css" href="../estils.css" />
+<title>Exercici 63</title>
+<script>
+  function iniciar()
+  {
+    document.getElementById('demo').style.display = "none";
+  }
+  function mostrar()
+  {
+    document.getElementById('demo').style.display = "";
+  }
+</script>
+</head>
+<body onload="iniciar()">
+<h1>Exercici 63</h1>
+<p>Ocultar un element al carregar la página web i mostrar l'element al fer clic en l'enllaç</p>
+
+<!--
+    Quan s'escriu l'event "onclick" d'un enllaç
+    ha de retornar "false" si volem que
+    ignori el vincle "href"
+-->
+
+<a href="#" onclick="mostrar(); return false;">Ver</a>
+<p id="demo">
+  Text secret que no es veu inicialment
+</p>
+
+</body>
+</html>
