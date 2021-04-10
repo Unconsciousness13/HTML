@@ -1,0 +1,65 @@
+ul.vbULr4syd {
+  position: absolute;
+  visibility: hidden;
+}
+.vbULr4syd {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  overflow: auto;
+  font-size: 1px;
+  padding: 1px;
+  margin: 0px;
+  border: 1px solid #400080;
+  background-color: #400080;
+}
+.vbULr4syd table {
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+.vbULr4syd tr {
+  font-size: 1px;
+  cursor: pointer;
+  background-color: #5A5E22;  
+}
+.vbULr4syd tr.over {
+  background-color: #240048;
+}
+.vbULr4syd td {
+  border: 1px solid #400080;
+  padding: 5px;
+  text-align: left;
+}
+.vbULr4syd tr.over td {
+  border-color: #CCCCCC;
+}
+.vbULr4syd td a {
+  font-family: Copperplate Gothic Bold;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.vbULr4syd tr.over a {
+  font-family: Copperplate Gothic Bold;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.vbULr4syd tr.popup {
+  background-color: #240048;
+}
+.vbULr4syd tr.popup td {
+  border-color: #CCCCCC;
+}
+.vbULr4syd tr.popup a {
+  font-family: Copperplate Gothic Bold;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+}
